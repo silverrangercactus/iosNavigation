@@ -16,6 +16,7 @@
 		205655D3267F6343008745C7 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205655D2267F6343008745C7 /* FeedViewController.swift */; };
 		205655D5267F6351008745C7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205655D4267F6351008745C7 /* ProfileViewController.swift */; };
 		205655D7267F67AE008745C7 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205655D6267F67AE008745C7 /* PostViewController.swift */; };
+		205655D9267F7E5F008745C7 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205655D8267F7E5F008745C7 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		205655D2267F6343008745C7 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		205655D4267F6351008745C7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		205655D6267F67AE008745C7 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		205655D8267F7E5F008745C7 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				205655C0267F5BDB008745C7 /* SceneDelegate.swift */,
 				205655C2267F5BDB008745C7 /* ViewController.swift */,
 				205655C4267F5BDB008745C7 /* Main.storyboard */,
+				205655D8267F7E5F008745C7 /* InfoViewController.swift */,
 				205655D6267F67AE008745C7 /* PostViewController.swift */,
 				205655D2267F6343008745C7 /* FeedViewController.swift */,
 				205655D4267F6351008745C7 /* ProfileViewController.swift */,
@@ -149,6 +152,7 @@
 				205655D7267F67AE008745C7 /* PostViewController.swift in Sources */,
 				205655C3267F5BDB008745C7 /* ViewController.swift in Sources */,
 				205655BF267F5BDB008745C7 /* AppDelegate.swift in Sources */,
+				205655D9267F7E5F008745C7 /* InfoViewController.swift in Sources */,
 				205655D5267F6351008745C7 /* ProfileViewController.swift in Sources */,
 				205655D3267F6343008745C7 /* FeedViewController.swift in Sources */,
 				205655C1267F5BDB008745C7 /* SceneDelegate.swift in Sources */,

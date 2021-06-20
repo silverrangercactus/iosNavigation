@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -40,6 +41,33 @@
             </objects>
             <point key="canvasLocation" x="1364" y="100"/>
         </scene>
+        <!--Info View Controller-->
+        <scene sceneID="6eP-MK-yJF">
+            <objects>
+                <viewController id="CPe-j4-BX1" customClass="InfoViewController" customModule="DZ_1_3_Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="28H-gR-u7B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Woe-9M-6Sh">
+                                <rect key="frame" x="184" y="406" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapButton:" destination="CPe-j4-BX1" eventType="touchUpInside" id="Pf8-Hs-MOH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O7h-VR-46g"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDy-Qh-t1A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2158" y="-246"/>
+        </scene>
         <!--Feed-->
         <scene sceneID="gjH-xA-Wm0">
             <objects>
@@ -64,13 +92,25 @@
                     <view key="view" contentMode="scaleToFill" id="HbL-9X-kME">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCP-6k-mHg">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8KZ-Kd-RlS" kind="show" identifier="post" id="QTs-Ij-SDS"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ido-Cz-5ov"/>
                         <color key="backgroundColor" red="1" green="0.38889766009999999" blue="0.41998610460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Feed" id="lzB-nE-b6B">
-                        <barButtonItem key="rightBarButtonItem" image="newspaper" catalog="system" id="w2v-Sa-9oI">
+                        <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" id="na7-8h-VJQ">
                             <connections>
-                                <segue destination="8KZ-Kd-RlS" kind="show" identifier="post" id="jrK-bM-VuK"/>
+                                <segue destination="CPe-j4-BX1" kind="presentation" id="qoD-bY-kq1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -93,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wba-Vo-TRk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2136" y="-593"/>
+            <point key="canvasLocation" x="2158" y="-977"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wMQ-fd-69Z">
@@ -115,8 +155,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
-        <image name="newspaper" catalog="system" width="128" height="108"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
