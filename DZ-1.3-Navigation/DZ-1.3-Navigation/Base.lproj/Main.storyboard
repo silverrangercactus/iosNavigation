@@ -66,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDy-Qh-t1A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2158" y="-246"/>
+            <point key="canvasLocation" x="2916" y="-593"/>
         </scene>
         <!--Feed-->
         <scene sceneID="gjH-xA-Wm0">
@@ -107,13 +107,7 @@
                         <viewLayoutGuide key="safeArea" id="ido-Cz-5ov"/>
                         <color key="backgroundColor" red="1" green="0.38889766009999999" blue="0.41998610460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Feed" id="lzB-nE-b6B">
-                        <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" id="na7-8h-VJQ">
-                            <connections>
-                                <segue destination="CPe-j4-BX1" kind="presentation" id="qoD-bY-kq1"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Feed" id="lzB-nE-b6B"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1r-1I-yQ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,11 +123,17 @@
                         <viewLayoutGuide key="safeArea" id="fvy-Qf-vHn"/>
                         <color key="backgroundColor" red="0.051045453439999999" green="1" blue="0.068180782519999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Post" id="P4P-1A-M1C"/>
+                    <navigationItem key="navigationItem" title="Post" id="P4P-1A-M1C">
+                        <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" id="na7-8h-VJQ">
+                            <connections>
+                                <segue destination="CPe-j4-BX1" kind="presentation" id="qoD-bY-kq1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wba-Vo-TRk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2158" y="-977"/>
+            <point key="canvasLocation" x="2149" y="-593"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wMQ-fd-69Z">
